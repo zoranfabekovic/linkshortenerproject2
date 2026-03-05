@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { auth } from "@clerk/nextjs/server";
-import { SignUpButton, SignInButton } from "@clerk/nextjs";
+import { SignUpButton } from "@clerk/nextjs";
 import {
   Link2,
   BarChart3,
@@ -85,11 +85,7 @@ export default async function Home() {
               Get Started — It&apos;s Free
             </Button>
           </SignUpButton>
-          <SignInButton mode="modal">
-            <Button size="lg" variant="outline" className="px-8">
-              Sign In
-            </Button>
-          </SignInButton>
+
         </div>
       </section>
 
