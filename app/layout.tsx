@@ -41,12 +41,12 @@ export default function RootLayout({
         >
           <header className="flex items-center justify-end gap-4 p-4 h-16">
             <SignedOut>
-              <SignInButton mode="modal">
+              <SignInButton mode="modal" forceRedirectUrl="/dashboard">
                 <Button variant="secondary" size="sm">
                   Sign in
                 </Button>
               </SignInButton>
-              <SignUpButton mode="modal">
+              <SignUpButton mode="modal" forceRedirectUrl="/dashboard">
                 <Button size="sm">Sign up</Button>
               </SignUpButton>
             </SignedOut>

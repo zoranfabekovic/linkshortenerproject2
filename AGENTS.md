@@ -39,6 +39,7 @@ These rules apply in every context. No exceptions.
 6. **Use Clerk for all authentication.** Do not implement custom auth logic.
 7. **Use shadcn/ui components** before writing custom UI. Do not install other component libraries.
 8. **Run `npm run lint` before declaring any task complete.** Fix all lint errors.
+9. **Never use `middleware.ts`.** It is deprecated in Next.js 16 (the version used in this project). Use `proxy.ts` instead for all middleware/proxy logic.
 
 ---
 
